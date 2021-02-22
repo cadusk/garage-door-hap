@@ -1,0 +1,11 @@
+---
+# TODO: Add documentation to configuration file
+accessory:
+  serial_number: "051AC-23AAM1"
+  pin: "11010123"
+  timeout: 5s
+device:
+  address: 0x10
+  channel: 1
+server:
+  port: "57658"
