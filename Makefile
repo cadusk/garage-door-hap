@@ -1,6 +1,6 @@
 .PHONY: build run clean help setup vet
 
-PROJECTNAME=garagedoor
+PROJECTNAME=hkgdo
 
 # Go related variables.
 GOBASE=$(shell pwd)
