@@ -1,0 +1,33 @@
+---
+# accessory: section is dedicated to set up Apple's HomeKit Accessory
+accessory:
+  # serial_number: Unique identifier for this device in your HomeKit home. Not
+  # sure there are any side effects having multiple HomeKit accessories with the
+  # same serial number in your HomeKit but as the name says, I don't believe this
+  # should be repeated.
+  # 
+  # Having it in a configuration file makes it easier to set custom serial
+  # numbers in case you have multiple custom devices set up in your Apple Home.
+  serial_number: "051AC-23AAM1"
+
+  # pin: Pin number required to be entered on your Apple device to be able to
+  # add this accessory to your Apple Home and interact with it.
+  pin: "11010123"
+
+  # timeout: Duration of time the door takes to completely open or close. If
+  # sensors do not detect complete door transition to states open or closed
+  # before time runs out, state will be set to stopped.
+  timeout: "5s"
+
+  # port: Port number the HTTP service will be listening to.
+  port: 57658
+
+# device: section is dedicated to set up the underlying hardware layer The
+# device being used in this sample is an i2c relay array that requires
+# 'address' and 'channel' to target an specific relay in the array
+device:
+  # address: represents i2c bus device address.
+  address: 0x10
+
+  # channel: represents the index of the target relay in the relay array.
+  channel: 1
