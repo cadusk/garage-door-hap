@@ -5,7 +5,7 @@ accessory:
   # sure there are any side effects having multiple HomeKit accessories with the
   # same serial number in your HomeKit but as the name says, I don't believe this
   # should be repeated.
-  # 
+  #
   # Having it in a configuration file makes it easier to set custom serial
   # numbers in case you have multiple custom devices set up in your Apple Home.
   serial_number: "051AC-23AAM1"

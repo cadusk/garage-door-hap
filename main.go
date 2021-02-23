@@ -5,7 +5,6 @@ import (
 
 	"github.com/brutella/hc"
 	"github.com/brutella/hc/characteristic"
-	"github.com/kkyr/fig"
 	"periph.io/x/conn/v3/gpio"
 )
 
@@ -16,7 +15,7 @@ var (
 )
 
 func main() {
-	if err := fig.Load(&config); err != nil {
+	if err := loadConfig(&config); err != nil {
 		panic(err)
 	}
 
