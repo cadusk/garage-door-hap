@@ -17,6 +17,7 @@ type Config struct {
 		Pin          string        `fig:"pin" default:"00102003"`
 		Timeout      time.Duration `fig:"timeout" default:"12s"`
 		StoragePath  string        `fig:"storage_path"`
+		SetupId      string        `fig:"setup_id"`
 		Port         string        `fig:"port" default:"57658"`
 	} `fig:"accessory"`
 

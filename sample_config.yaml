@@ -14,6 +14,11 @@ accessory:
   # add this accessory to your Apple Home and interact with it.
   pin: "11010123"
 
+  # setup_id: Setup ID is a 4 character string [A-Z0-9] used to identify your
+  # device during setup phase. It is also used by QRCode generators to build the
+  # URL that will go in the QRCode.
+  setup_id: "HKGD"
+
   # timeout: Duration of time the door takes to completely open or close. If
   # sensors do not detect complete door transition to states open or closed
   # before time runs out, state will be set to stopped.

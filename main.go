@@ -88,8 +88,9 @@ func determineStatus() {
 func startHomeKitServer() {
 	hcConfig := hc.Config{
 		Pin:         config.Accessory.Pin,
-		StoragePath: config.Accessory.StoragePath,
 		Port:        config.Accessory.Port,
+		SetupId:     config.Accessory.SetupId,
+		StoragePath: config.Accessory.StoragePath,
 	}
 
 	t, err := hc.NewIPTransport(hcConfig, acc.Accessory)
